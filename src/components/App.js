@@ -50,7 +50,6 @@ function App() {
   return (
     <div className="timer">
       <p>{min<10 ? `0${min}` : min}:{seconds<10 ? `0${seconds}` : seconds}:{centi<10 ? `0${centi}` : centi}</p>
-      <div>
         <button onClick={() => handleClick(0)}>Start</button>
         <button onClick={() => handleClick(1)}>Stop</button>
         <button onClick={() => handleClick(2)}>Lap</button>
@@ -58,7 +57,6 @@ function App() {
         <ul>
           {laps.map(lap => (<li>{lap}</li>))}
         </ul>
-      </div>
     </div>
   );
 }
